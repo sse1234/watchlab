@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+allantools
+pyubx2
+pyserial
+sounddevice
