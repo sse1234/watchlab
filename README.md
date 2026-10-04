@@ -27,3 +27,5 @@ Ushio on coil A, single coil, no gradiometer, gain ~3/4, laptop on battery. Peak
   timing error (common to all lines; cancels in rotor/crystal ratio). Absolute numbers need the RP.
 Use for the lock-in: 264 Hz (or 256) for the crystal, 8 Hz for the rotor. Avoid 248 Hz (2 Hz from the
 mains 5th harmonic at 250).
+
+Listen: `data/ushio_9rb1_coil_20s.mp3` (20 s from the 120 s record, peak-normalised, 1.5 s fade in / 3 s fade out, mono to both channels).
