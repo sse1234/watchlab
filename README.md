@@ -29,3 +29,12 @@ Use for the lock-in: 264 Hz (or 256) for the crystal, 8 Hz for the rotor. Avoid 
 mains 5th harmonic at 250).
 
 Listen: `data/ushio_9rb1_coil_20s.mp3` (20 s from the 120 s record, peak-normalised, 1.5 s fade in / 3 s fade out, mono to both channels).
+
+### The 256 Hz family is the rotor EMF chopped at 256 Hz (2026-10-04)
+Demodulating the 256 Hz band (`data/ushio_256Hz_envelope.png`): modulation index ~3.6, envelope goes to zero
+twice per rotor turn, in-phase component flips sign. The raw waveform is a 256 Hz spike train whose amplitude and
+polarity follow the 8 Hz rotor sine, i.e. the brake switching the generator coil at 256 Hz = DSB with almost no
+carrier (0.9 mFS carrier vs 3.3 mFS sidebands). Modulation correlates -0.97 with the 8 Hz line at a quarter-turn lag
+(one derivative apart). Envelope peaks alternate 4.4 / 3.6 mFS between half turns (16 Hz term): half-turn asymmetry.
+Consequence: lock in on the 248/264 Hz *pair*: (phi264 + phi248)/2 = chopper (crystal) phase, (phi264 - phi248)/2 =
+rotor phase. Do not rely on the 256 Hz carrier alone.
